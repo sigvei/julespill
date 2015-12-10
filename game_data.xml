@@ -1,0 +1,89 @@
+<game>
+  <node id="1">
+    <description>
+      Det er første desember. Klokka er 7.00. Heldigvis åpner butikken
+      før barna våkner. Det er på tide å skaffe en julekalender. Hva velger du
+      å kjøpe?
+    </description>
+    <alternatives>
+      <alternative leads-to="death_sjoko">
+        Sjokoladekalender, kr 19,90.
+      </alternative>
+      <alternative leads-to="death_forfinegaver">
+        Jeg har da laget en skikkelig pakkekalender allerede, kr. 1000,-
+      </alternative>
+      <alternative leads-to="2">
+        Appelsinkalender med nellikspiker, kr. 12,90.
+      </alternative>
+    </alternatives>
+  </node>
+
+  <node id="2">
+    <description>
+      <p>Appelsin er naturligvis det eneste riktige svaret. For du valgte
+        selvsagt den økologiske.</p>
+
+      <p>Du får invitasjon til julebord med jobben. Hva svarer du?</p>
+    </description>
+    <alternative leads-to="death_utro">Ja, for her blir det party!</alternative>
+    <alternative leads-to="death_boring">Nei, fysj. Her blir det stupfyll, utroskap og voldtektsmistanker.</alternative>
+    <alternative leads-to="3">Du svarer ja, men passer på å ha en avtale slik at du må forlate klokken 19.00</alternative>
+  </node>
+
+
+  <node id="death_sjoko">
+    <description>
+      <p>GISP! Billig sjokolade utnytter kakaobønder i sør. De blir så fattige at de ikke
+      en gang gleder seg til jul. Dessuten blir barna dine overvektige av sjokolade
+      hver morgen. Overvektige dør. Da kan de ikke glede seg til jul.</p>
+
+      <p>Dette har du blitt advart mot. 13-årige</p>
+    </description>
+    <alternative leads-to="1">
+      Begynn forfra.
+    </alternative>
+  </node>
+
+  <node id="death_forfinegaver">
+    <description>
+      <p>– Dersom man åpner store gaver hver dag, kan det redusere gleden og
+        spenningsnivået på julaften, fortalte en forbrukerøkonom til VG i saken
+        «Svir av tusenvis på pakkekalendre». Her har du ikke fulgt med i
+        tiden. Julaften er ødelagt. For barna.</p>
+    </description>
+    <alternative leads-to="1">Prøv på nytt</alternative>
+  </node>
+
+  <node id="death_plast">
+    <description>
+      Du skal liksom feire jul, du da, med en haug unyttige plast, mens
+      Big Plastic spyr ut sin miljøgift. Du kommer hjem med dette minnesmerket
+      over den vestlige forbrukerkulturens ustoppelige arroganse. Barna begynner å gråte,
+      for de tenker på de stakkars sjøfuglene som blir sterile og paranoide av mikroplast.
+      Bra jobba. Du har ødelagt julen.
+    </description>
+    <alternative leads-to="1">
+      Begynn forfra.
+    </alternative>
+  </node>
+
+  <node id="death_utro">
+    <description>
+      <p>En uke etter julebordet er det duket for skilsmisse i heimen. «Den
+        utro søker ofte seg selv», har du lest at Sissel Gran skrev i
+        Morgenbladet. Vel, du fant ikke deg selv mens du rullet rundt bak scenen med
+        sjefen. Uansett, julen er ødelagt.</p>
+
+      <p>Du burde ha visst dette. Hvert år blir vi advart om at «julebord er høytid
+        for utroskap» i minst tjuefem artikler per dag.</p>
+    </description>
+    <alternative leads-to="2">Velg en annen vei</alternative>
+  </node>
+
+  <node id="death_boring">
+    <description>
+      <p></p>
+    </description>
+    <alternative leads-to="2">Velg en annen vei</alternative>
+  </node>
+</game>
