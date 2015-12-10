@@ -1,5 +1,7 @@
 <game>
   <node id="1">
+    <title>1. desember</title>e
+    <icon>flaticon-bells</icon>
     <description>
       Det er første desember. Klokka er 7.00. Heldigvis åpner butikken
       før barna våkner. Det er på tide å skaffe en julekalender. Hva velger du
@@ -19,6 +21,8 @@
   </node>
 
   <node id="2">
+    <icon>flaticon-moose1</icon>
+    <title>2. desember</title>
     <description>
       <p>Appelsin er naturligvis det eneste riktige svaret. For du valgte
         selvsagt den økologiske.</p>
@@ -30,8 +34,20 @@
     <alternative leads-to="3">Du svarer ja, men passer på å ha en avtale slik at du må forlate klokken 19.00</alternative>
   </node>
 
+  <node id="3">
+    <icon>flaticon-horns</icon>
+    <title>3. desember</title>
+    <description>På vei hjem fra julebordet møter du på en prostituert.</description>
+
+    <alternative leads-to="4">Du er kvinne.</alternative>
+    <alternative leads-to="death_std">Du har lest at menn gruer seg til å gå hjem fra julebord fordi de da føler at de må kjøpe sex. Siden du er en mann som sliter med uønsket atferd ved omsorg for eget kjønnsorgan, kjøper du deg en tur.</alternative>
+    <alternative leads-to="4">Du roper «nei, nei, nei» og løper.</alternative>
+  </node>
+
 
   <node id="death_sjoko">
+    <icon>flaticon-candy9</icon>
+    <title>Du dør</title>
     <description>
       <p>GISP! Billig sjokolade utnytter kakaobønder i sør. De blir så fattige at de ikke
       en gang gleder seg til jul. Dessuten blir barna dine overvektige av sjokolade
@@ -45,6 +61,8 @@
   </node>
 
   <node id="death_forfinegaver">
+    <icon>flaticon-candy9</icon>
+    <title>Du ødela julen</title>
     <description>
       <p>– Dersom man åpner store gaver hver dag, kan det redusere gleden og
         spenningsnivået på julaften, fortalte en forbrukerøkonom til VG i saken
@@ -55,6 +73,8 @@
   </node>
 
   <node id="death_plast">
+    <icon>flaticon-candy9</icon>
+    <title>Du ødela naturen</title>
     <description>
       Du skal liksom feire jul, du da, med en haug unyttige plast, mens
       Big Plastic spyr ut sin miljøgift. Du kommer hjem med dette minnesmerket
@@ -68,6 +88,8 @@
   </node>
 
   <node id="death_utro">
+    <icon>flaticon-candy9</icon>
+    <title>Du ødela ekteskapet</title>
     <description>
       <p>En uke etter julebordet er det duket for skilsmisse i heimen. «Den
         utro søker ofte seg selv», har du lest at Sissel Gran skrev i
@@ -81,8 +103,10 @@
   </node>
 
   <node id="death_boring">
+    <icon>flaticon-candy9</icon>
+    <title>Du ødela julen</title>
     <description>
-      <p></p>
+      <p>Den som ikke møter opp på sosiale arrangementer i regi av jobben, mister muligheter. Det er over akevitt og ribbe de viktige avgjørelsene tas. Dagen etter julebordet blir det annonsert nedbemanninger. Du er nedbemannet. For å betale husleien må dere selge gavene, juletreet, adventsstaken og den yngste sønnen. Julen, familien og livet er ødelagt.</p>
     </description>
     <alternative leads-to="2">Velg en annen vei</alternative>
   </node>

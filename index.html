@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 
-<head><title>Julespill</title>
+<head>
+<meta charset="UTF-8">
+
+<title>Julespill</title>
 
 <style>
   #game_area {
     font-family: "Founders Grotesk";
     max-width: 25em;
     text-align: center;
+    margin: auto auto;
   }
 
   #game_area button  {
@@ -23,6 +27,11 @@
   #game_area button:hover {
     background-color: #e6c2c2;
   }
+  #game_area span.icon::before {
+    font-size: 75px;
+    color: #e63332;
+    margin-left: 0;
+  }
 </style>
 </head>
 
@@ -31,7 +40,8 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="file:///C:/Sites/julespill/game.js"></script>
+<script src="game.js"></script>
+<link type="text/css" rel="stylesheet" href="flaticon.css"/>
 <link type="text/css" rel="stylesheet" href="game_style.css"/>
 
 </body>

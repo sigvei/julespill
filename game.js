@@ -32,6 +32,8 @@ Alternative.prototype.toButton = function(julespill) {
 var Node = function(xml) {
   var node = jQuery(xml);
   this.id = node.attr("id");
+  this.title=node.find("title").html();
+  this.icon=node.find("icon").text();
   this.description=node.find("description").html();
   this.alternatives = new Array();
 
@@ -46,6 +48,12 @@ Node.prototype.go = function (julespill) {
 
   var div = jQuery("<div></div>");
   var desc = jQuery("<p></p>", { class: "description" } );
+  if (this.icon) {
+    div.append(jQuery("<span></span>", { class: "icon " + this.icon }));
+  }
+  if (this.title) {
+    div.append(jQuery("<h3>" + this.title + "</h3>"));
+  }
   desc.html(this.description);
   div.append(desc);
 
@@ -54,6 +62,13 @@ Node.prototype.go = function (julespill) {
   }
 
   julespill.area.append(div);
+
+  var hash = "#" + this.id;
+  if (history.pushState) {
+    history.pushState(null, null, hash);
+  } else {
+    location.hash = hash;
+  }
 }
 
 var Julespill = function(data, area) {
@@ -67,7 +82,12 @@ var Julespill = function(data, area) {
 };
 
 Julespill.prototype.start = function() {
-  this.nodes[0].go(this);
+  var hash = window.location.hash.substring(1);
+  var node = this.getNode(hash);
+  if (node == null) {
+    node = this.nodes[0];
+  }
+  node.go(this);
 };
 
 Julespill.prototype.getNode = function(id) {
