@@ -21,7 +21,17 @@ Alternative.prototype.toButton = function(julespill) {
 
   var toNode = julespill.getNode(this.leads_to_id);
   if (toNode != null) {
-    e.click(function() { toNode.go(julespill) });
+    e.click(function() { 
+      if (typeof ga != "undefined") {
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'Julespill',
+          eventAction:   'buttonPress',
+          eventLabel:    this.text
+        });
+      }
+      toNode.go(julespill)
+    });
   } else {
     e.text("DEAD_END " + e.text());
   }
