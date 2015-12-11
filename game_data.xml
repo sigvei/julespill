@@ -22,7 +22,7 @@
 
   <node id="2">
     <icon>flaticon-moose1</icon>
-    <title>2. desember</title>
+    <title>3. desember</title>
     <description>
       <p>Appelsin er naturligvis det eneste riktige svaret. For du valgte
         selvsagt den økologiske.</p>
@@ -36,7 +36,7 @@
 
   <node id="3">
     <icon>flaticon-horns</icon>
-    <title>3. desember</title>
+    <title>5. desember</title>
     <description>På vei hjem fra julebordet møter du på en prostituert.</description>
 
     <alternative leads-to="4">Du er kvinne.</alternative>
@@ -44,6 +44,294 @@
     <alternative leads-to="4">Du roper «nei, nei, nei» og løper.</alternative>
   </node>
 
+  <node id="4">
+    <icon>flaticon-christmas14</icon>
+    <title>7. desember</title>
+    <description>
+      <p>Du kommer deg velberget hjem. I dag skal dere ha
+        førjulsmiddag med venner, de med hunden du vet. Hva serverer du?</p>
+    </description>
+
+    <alternative leads-to="death_mandel">Grøt med mandel</alternative>
+    <alternative leads-to="death_julemat">Typisk julemat</alternative>
+    <alternative leads-to="5">Havregryn lagd på vann</alternative>
+  </node>
+
+  <node id="death_mandel">
+    <icon>flaticon-candy9</icon>
+    <title>Du drepte bikkja</title>
+    <description>
+      <p>Hunden får i seg mandelen og dør. Du ødela julen.</p>
+    </description>
+    <source>NRK: Julemat kan være giftig for hunden</source>
+
+    <alternative leads-to="4">Velg en annen rett</alternative>
+  </node>
+
+  <node id="death_julemat">
+    <icon>flaticon-candy9</icon>
+    <title>Du drepte bikkja</title>
+    <description>
+      <p>Hunden får i seg restene av den feite maten, og dør av diaré. Du ødela julen.</p>
+    </description>
+    <source>NRK: Julemat kan være giftig for hunden</source>
+
+    <alternative leads-to="4">Velg en annen rett</alternative>
+  </node>
+
+
+  <node id="5">
+    <icon>flaticon-christmas23</icon>
+    <title>9. desember</title>
+    <description>
+      <p>Det smaker kanskje tapetlim, men best å være på den sikre siden med
+        havregrøt.</p>
+
+      <p>Du har innkjøp som må gjøres. Hva er du?</p>
+    </description>
+
+    <alternative leads-to="death_female">Kvinne</alternative>
+    <alternative leads-to="death_male">Mann</alternative>
+    <alternative leads-to="6">Smart</alternative>
+  </node>
+
+  <node id="death_female">
+    <icon>flaticon-candy9</icon>
+    <title>Du dør</title>
+    <description>Du får hjertesykdom, slag og nyresvikt.</description>
+    <source>DinSide: «Juleshopping øker risikoen for hjertesykdom, slag og nyresvikt»</source>
+    <alternative leads-to="5">Ugunstig. Prøv noe annet</alternative>
+  </node>
+
+  <node id="death_male">
+    <icon>flaticon-candy9</icon>
+    <title>Du dør</title>
+    <description>Du får infarkt. Juleshopping er farlig for menn. Og ikke kom å
+      si at du ikke visste det. Aftenposten har advart deg.</description>
+    <source>Aftenposten: «Julehandel er helseskadelig – for menn»</source>
+    <alternative leads-to="5">Ugunstig. Prøv noe annet</alternative>
+  </node>
+
+  <node id="6">
+    <icon>flaticon-christmas62</icon>
+    <title>11. desember</title>
+    <description>
+      <p>Du er smart, og lar være å handle. Handling er den sikre død.</p>
+
+      <p>I dag var det kaldt! Hvordan tenner du i peisen?</p>
+    </description>
+    <source></source>
+    <alternative leads-to="7">Mye tennvæske og en julebukk av halm.</alternative>
+    <alternative leads-to="death_acrylamid">Papir og mandarinskall.</alternative>
+    <alternative leads-to="death_freeze">Tennbriketter.</alternative>
+  </node>
+
+  <node id="death_acrylamid">
+    <icon>flaticon-candy9</icon>
+    <title>Du dør</title>
+    <description>
+      Nei, nei, nei. Du må bruke opptenning med høy antennelsespunkt, slik at det
+      ikke dannes akrylamid. For akrylamid gir deg kreft. Kreft er farlig. Du dør.
+    </description>
+    <source>En bonde fra Jæren: «Derfor danner ikke raps det farlige kreftfremkallende stoffet acrylamid»</source>
+    <alternative leads-to="6">Tenn en annen gnist</alternative>
+  </node>
+
+  <node id="death_freeze">
+    <icon>flaticon-candy9</icon>
+    <title>Du dør</title>
+    <description>
+      Dagens tennbriketter lages med raps i stedet for noe som faktisk kan ta fyr, men
+      som dreper deg med kreftsot og akrylamid. Du får aldri fyr på bålet. Sakte blir
+      temperaturen lavere. Du dør av kulden. Julen er ødelagt.
+    </description>
+    <source>En bonde fra Jæren: «Derfor danner ikke raps det farlige kreftfremkallende stoffet acrylamid»</source>
+    <alternative leads-to="6">Tenn en annen gnist</alternative>
+  </node>
+
+  <node id="7">
+    <icon>flaticon-christmas11</icon>
+    <title>13. desember</title>
+    <description>
+      <p>Hm, her trengs det litt pynt. Hva kjøper du inn?</p>
+    </description>
+    <alternative leads-to="death_cat">Svibel</alternative>
+    <alternative leads-to="8">Plastrose</alternative>
+    <alternative leads-to="death_cat">Julestjerne</alternative>
+  </node>
+  <node id="death_cat">
+    <icon>flaticon-candy9</icon>
+    <title>Katten dør</title>
+    <description>
+      <p>Julen er ødelagt, katten er død. Den spiste pynten og ble forgiftet.</p>
+    </description>
+    <source>Dyrenett: «Julen, farlig uke for kjæledyr»</source>
+    <alternative leads-to="7">Velg noe styggere</alternative>
+  </node>
+
+  <node id="8">
+    <icon>flaticon-christmas13</icon>
+    <title>15. desember</title>
+    <description>
+      <p>Enda ett juleselskap er på trappene. Hvordan skal rommet stelles i stand?</p>
+    </description>
+    <alternative leads-to="death_allergy">Koselige stearinlys, lilla stearinlys
+      og julepynt ungene har lagd i barnehagen</alternative>
+    <alternative leads-to="9">Sterilisering, blanke overflater, kraftig
+      belysning, og sperretape rundt farlige gjenstander</alternative>
+  </node>
+  <node id="death_allergy">
+    <icon>flaticon-candy9</icon>
+    <title>Gjestene dør</title>
+    <description>
+      <p>Stearinlys? Seriøst? Er du klar over hvor mange kreftfremkallende sotpartikler
+        du utsetter deg og dine nærmeste for? En av gjestene er allergiker, og
+        dør av sot.  Du har ødelagt julen.</p>
+    </description>
+    <source>VG: «Levende lys er som passiv røyking: Når du blåser ut dette
+      telyset frigjøres det 350.000 sotpartikler!  FHI: Du kan bli
+      syk»</source>
+    <alternative leads-to="8">Prøv noe litt mindre koselig, du</alternative>
+  </node>
+
+  <node id="9">
+    <icon>flaticon-christmas17</icon>
+    <title>17. desember</title>
+    <description>
+      <p>På tide å gjøre noe hyggelig med barna, kanskje? Se litt på tv, for eksempel.</p>
+    </description>
+    <alternative leads-to="death_julekongen">Ja, «Julekongen» er på!</alternative>
+    <alternative leads-to="10">Bedre å la være</alternative>
+  </node>
+  <node id="death_julekongen">
+    <icon>flaticon-candy9</icon>
+    <title>Julestemningen din dør</title>
+    <description>
+      <p>Du ser på dette «moderne juledramaet» og føler deg akkurat som de
+        sinte menneskene på NRKs facebookside:</p>
+
+      <p><em>«Jaja.. Blir vel ikke noe jul i år da, synd.» «‘Julekongen’ gir
+          ikke julestemning, den er heller ikke egnet for de minste! Skam dere,
+          som ødelegger adventstiden med å skuffe så mange.»</em></p>
+    </description>
+    <source>Dagbladet: «Sinte seere vil ha ‘Jul i Blåfjell’ tilbake på NRK»</source>
+    <alternative leads-to="9">Skam dere, NRK! *knuser tv-en*</alternative>
+  </node>
+
+  <node id="10">
+    <icon>flaticon-christmas11</icon>
+    <title>19. desember</title>
+    <description>
+      <p>Skal du invitere en ensom hjem til deg for å feire jul?</p>
+    </description>
+    <alternative leads-to="death_ensom">Ja, det høres lurt ut</alternative>
+    <alternative leads-to="11">Nei, feirer for oss selv, vi</alternative>
+  </node>
+  <node id="death_ensom">
+    <icon>flaticon-candy9</icon>
+    <title>Du ødela julen</title>
+    <description>
+      <p>Du gjorde vondt verre for den ensomme.</p>
+    </description>
+
+    <source>NRK Rogaland: – Folk bør tenka seg om før dei inviterer einsame
+      heim til julaftan.  Å bli invitert heim til ein ukjent familie for å
+      feire jul kan gjera vondt verre for nokon, meiner byprest i Sandnes,
+      Ingeborg Krager.</source>
+    <alternative leads-to="11">Best å ikke forsøke</alternative>
+  </node>
+
+  <node id="11">
+    <icon>flaticon-christmas26</icon>
+    <title>21. desember</title>
+    <description>
+      <p>Nissen kommer på kjøpesenteret! Lar du barna sitte på fanget hans?</p>
+    </description>
+    <source></source>
+    <alternative leads-to="death_parfyme">Så klart!</alternative>
+    <alternative leads-to="12">Aldri i verden!</alternative>
+  </node>
+  <node id="death_parfyme">
+    <icon>flaticon-candy9</icon>
+    <title>Barnet døde (nesten)</title>
+    <description>
+      <p>Julenissen hadde tatt på seg parfyme, tross Astma- og
+        allergiforbundets kraftige advarsel, sendt 1. desember. Dermed ble det
+        akutt allergisk reaksjon og ingen juleglede i år.</p>
+    </description>
+    <source>NRK Troms: Advarer mot uekte nisser som lukter godt</source>
+    <alternative leads-to="11">Jeg angrer</alternative>
+  </node>
+
+  <node id="12">
+    <icon>flaticon-christmas33</icon>
+    <title>23. desember</title>
+    <description>
+      <p>Årets viktigste spørsmål: Får søsteren din komme på juleselskap i
+        morgen?</p>
+    </description>
+    <alternative leads-to="13">Ikke snakk om</alternative>
+    <alternative leads-to="death_sibling">Det er jo en høytid for familie…</alternative>
+  </node>
+  <node id="death_sibling">
+    <icon>flaticon-candy9</icon>
+    <title>Du ødela julen</title>
+    <description>
+      <p>Du burde lest deg opp. Søsken gruer seg til å feire jul med andre
+        søsken. De er nemlig veldig misunnelige på hverandre. Det hele blir
+        veldig trist. (Og ikke spør oss hvorfor det er slik, det må man ha VG+
+        for å finne ut.)</p>
+    </description>
+    <source>VG: «Har du begynt å grue deg til å feire jul sammen med et søsken?
+      Da er du ikke alene.»</source>
+    <alternative leads-to="13">OK, lås døra og steng henne ute</alternative>
+  </node>
+
+  <node id="13">
+    <icon>flaticon-christmas27</icon>
+    <title>24. desember</title>
+    <description>
+      <p>Du ser i vinduet at naboene kommer drassende på julegraner. Kanskje på
+        tide å hente en selv?</p>
+    </description>
+    <alternative leads-to="death_flammekaster">Ja! Jo større, jo bedre</alternative>
+    <alternative leads-to="death_bugs">Ja, men bare en liten en, de greiene der er jo brannfeller</alternative>
+    <alternative leads-to="death_nope">Nei, ikke tale om</alternative>
+  </node>
+  <node id="death_flammekaster">
+    <icon>flaticon-candy9</icon>
+    <title>Du brenner ned huset</title>
+    <description>
+      <p>Julegranen er en «uhyre potent flammekaster». Og du tok den inn i
+        stuen. Man skulle tro du oppsøkte katastrofe.</p>
+    </description>
+    <source>NELFO: «Juletreet er en potent flammekaster»</source>
+    <alternative leads-to="13">Prøv igjen</alternative>
+  </node>
+  <node id="death_bugs">
+    <icon>flaticon-candy9</icon>
+    <title>Huset blir spist opp</title>
+    <description>
+      <p>Vet du hva som bor i trær? Kravlende, krypende innsekter. Og
+        juletreet, det er et tre. Du har tatt tusenvis av kryp inn i stuen. De
+        kravler inn i veggen, i sengene, i drømmene dine. Huset er ødelagt. Det
+        er også julen.</p>
+    </description>
+    <source>TV2: «Juletreet ditt inneholder 25 000 småkryp»</source>
+    <alternative leads-to="13">Prøv igjen</alternative>
+  </node>
+  <node id="death_nope">
+    <icon>flaticon-candy9</icon>
+    <title>Det blir ikke jul</title>
+    <description>
+      <p>Du skal ikke ha tre, nei? Du vil frata barna den gleden? Kanskje du er
+        mot pakker også? Jaja, du overlevde den fysiske livsfaren og det
+        psykiske stresset vi kaller «jul». Ved å ikke ha jul. Barna dine er
+        ikke sinte. De er bare veldig, veldig skuffet. Og rømmer.</p>
+    </description>
+    <alternative leads-to="13">Nei, nei, vi må ha tre!</alternative>
+    <alternative leads-to="1">Start forfra</alternative>
+  </node>
 
   <node id="death_sjoko">
     <icon>flaticon-candy9</icon>
@@ -53,11 +341,20 @@
       en gang gleder seg til jul. Dessuten blir barna dine overvektige av sjokolade
       hver morgen. Overvektige dør. Da kan de ikke glede seg til jul.</p>
 
-      <p>Dette har du blitt advart mot. 13-årige</p>
+      <p>Dette har du blitt advart mot, i utallige kronikker. Følg med litt, da.</p>
     </description>
     <alternative leads-to="1">
       Begynn forfra.
     </alternative>
+  </node>
+
+  <node id="death_std">
+    <icon>flaticon-candy9</icon>
+    <title>Du dør</title>
+    <description>
+      <p>Seksuelt overførbare sykdommer kan være dødelige. Din var det.</p>
+    </description>
+    <alternative leads-to="1">Gjør noe annet</alternative>
   </node>
 
   <node id="death_forfinegaver">
