@@ -35,6 +35,7 @@ var Node = function(xml) {
   this.title=node.find("title").html();
   this.icon=node.find("icon").text();
   this.description=node.find("description").html();
+  this.source = node.find("source").text();
   this.alternatives = new Array();
 
   var xml_alts = node.find("alternative");
@@ -43,11 +44,10 @@ var Node = function(xml) {
   }
 }
 
-Node.prototype.go = function (julespill) {
-  julespill.area.html("");
-
+Node.prototype.to_html = function(julespill) {
   var div = jQuery("<div></div>");
   var desc = jQuery("<p></p>", { class: "description" } );
+
   if (this.icon) {
     div.append(jQuery("<span></span>", { class: "icon " + this.icon }));
   }
@@ -57,11 +57,20 @@ Node.prototype.go = function (julespill) {
   desc.html(this.description);
   div.append(desc);
 
+  if (this.source && this.source != "") {
+    div.append(jQuery("<p></p>", { class: "source" }).text("Kilde: " + this.source));
+  }
+
   for(var i=0; i < this.alternatives.length; i++) {
     div.append(this.alternatives[i].toButton(julespill));
   }
 
-  julespill.area.append(div);
+  return(div);
+}
+
+Node.prototype.go = function (julespill) {
+  julespill.area.html("");
+  julespill.area.append(this.to_html(julespill));
 
   var hash = "#" + this.id;
   if (history.pushState) {
