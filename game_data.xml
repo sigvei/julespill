@@ -338,11 +338,16 @@
     <title>Du dør</title>
     <description>
       <p>GISP! Billig sjokolade utnytter kakaobønder i sør. De blir så fattige at de ikke
-      en gang gleder seg til jul. Dessuten blir barna dine overvektige av sjokolade
-      hver morgen. Overvektige dør. Da kan de ikke glede seg til jul.</p>
+      en gang gleder seg til jul. Dessuten blir barna dine overvektige av
+      sjokolade hver morgen. Overvektige dør. Da kan de ikke glede seg til
+      jul.</p>
 
       <p>Dette har du blitt advart mot, i utallige kronikker. Følg med litt, da.</p>
     </description>
+    <source>Aftenposten: «– Barn er kakao-slaver. Denne gutten er tatt fra
+      foreldrene. Han tvinges til å jobbe på en kakaogård i Elfenbenskysten,
+      hvor han sover ute og får mat en gang om dagen. Alt for å skaffe kakao
+      til sjokoladeindustrien.»</source>
     <alternative leads-to="1">
       Begynn forfra.
     </alternative>
@@ -352,7 +357,8 @@
     <icon>flaticon-candy9</icon>
     <title>Du dør</title>
     <description>
-      <p>Seksuelt overførbare sykdommer kan være dødelige. Din var det.</p>
+      <p>Seksuelt overførbare sykdommer kan være dødelige. Den du fikk fra den
+        prostituerte var det det.</p>
     </description>
     <alternative leads-to="1">Gjør noe annet</alternative>
   </node>
@@ -362,10 +368,10 @@
     <title>Du ødela julen</title>
     <description>
       <p>– Dersom man åpner store gaver hver dag, kan det redusere gleden og
-        spenningsnivået på julaften, fortalte en forbrukerøkonom til VG i saken
-        «Svir av tusenvis på pakkekalendre». Her har du ikke fulgt med i
-        tiden. Julaften er ødelagt. For barna.</p>
+        spenningsnivået på julaften, sier en forbrukerøkonom Her har du ikke
+        fulgt med i tiden. Julaften er ødelagt. For barna.</p>
     </description>
+    <source>VG: «Svir av tusenvis på pakkekalendre»</source>
     <alternative leads-to="1">Prøv på nytt</alternative>
   </node>
 
@@ -379,6 +385,7 @@
       for de tenker på de stakkars sjøfuglene som blir sterile og paranoide av mikroplast.
       Bra jobba. Du har ødelagt julen.
     </description>
+    <source>VG: Ikke gå i fellen: Unngå farlige barneleker til jul</source>
     <alternative leads-to="1">
       Begynn forfra.
     </alternative>
@@ -396,6 +403,7 @@
       <p>Du burde ha visst dette. Hvert år blir vi advart om at «julebord er høytid
         for utroskap» i minst tjuefem artikler per dag.</p>
     </description>
+    <source>Dagbladet: «Nå er det høytid for julebordsex»</source>
     <alternative leads-to="2">Velg en annen vei</alternative>
   </node>
 
@@ -403,8 +411,17 @@
     <icon>flaticon-candy9</icon>
     <title>Du ødela julen</title>
     <description>
-      <p>Den som ikke møter opp på sosiale arrangementer i regi av jobben, mister muligheter. Det er over akevitt og ribbe de viktige avgjørelsene tas. Dagen etter julebordet blir det annonsert nedbemanninger. Du er nedbemannet. For å betale husleien må dere selge gavene, juletreet, adventsstaken og den yngste sønnen. Julen, familien og livet er ødelagt.</p>
+      <p>Den som ikke møter opp på sosiale arrangementer i regi av jobben,
+        mister muligheter. Det er over akevitt og ribbe de viktige avgjørelsene
+        tas. Dagen etter julebordet blir det annonsert nedbemanninger. Du er
+        nedbemannet. For å betale husleien må dere selge gavene, juletreet,
+        adventsstaken og den yngste sønnen. Julen, familien og livet er
+        ødelagt.</p>
     </description>
+    <source>Dagens Perspektiv: «Mange dropper hele julebordet for dermed å være
+      sikker på å ikke dumme seg ut. Det er ikke så lurt for ditt sosiale
+      omdømme. Julebordet, og andre store fester, er en viktig del av
+      jobb-dynamikken.»</source>
     <alternative leads-to="2">Velg en annen vei</alternative>
   </node>
 </game>
