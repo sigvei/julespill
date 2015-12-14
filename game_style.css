@@ -28,3 +28,6 @@
   #game_area .source {
     color: #aaa;
   }
+  #game_area h3 {
+    font-size: 150%;
+  }
