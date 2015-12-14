@@ -1,6 +1,6 @@
 jQuery(function() {
   console.log("Launching game…");
-  jQuery.get('game_data.xml', function (xml_data) {
+  jQuery.get('//dvpm0d7fqsyhz.cloudfront.net/game_data.xml', function (xml_data) {
     console.log("Data loaded.");
     var g = new Julespill(jQuery(xml_data), jQuery("#game_area"));
     g.start();
