@@ -106,7 +106,7 @@
   <node id="death_male">
     <icon>flaticon-candy9</icon>
     <title>Du dør</title>
-    <description>Du får infarkt. Juleshopping er farlig for menn. Og ikke kom å
+    <description>Du får infarkt. Juleshopping er farlig for menn. Og ikke kom og
       si at du ikke visste det. Aftenposten har advart deg.</description>
     <source>Aftenposten: «Julehandel er helseskadelig – for menn»</source>
     <alternative leads-to="5">Ugunstig. Prøv noe annet</alternative>
@@ -173,9 +173,9 @@
     <icon>flaticon-christmas13</icon>
     <title>15. desember</title>
     <description>
-      <p>Enda ett juleselskap er på trappene. Hvordan skal rommet stelles i stand?</p>
+      <p>Enda et juleselskap er på trappene. Hvordan skal rommet stelles i stand?</p>
     </description>
-    <alternative leads-to="death_allergy">Koselige stearinlys, lilla stearinlys
+    <alternative leads-to="death_allergy">Koselige servietter, lilla stearinlys
       og julepynt ungene har lagd i barnehagen</alternative>
     <alternative leads-to="9">Sterilisering, blanke overflater, kraftig
       belysning, og sperretape rundt farlige gjenstander</alternative>
@@ -360,7 +360,7 @@
       <p>Seksuelt overførbare sykdommer kan være dødelige. Den du fikk fra den
         prostituerte var det det.</p>
     </description>
-    <alternative leads-to="1">Gjør noe annet</alternative>
+    <alternative leads-to="3">Gjør noe annet</alternative>
   </node>
 
   <node id="death_forfinegaver">
