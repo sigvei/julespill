@@ -1,6 +1,6 @@
 jQuery(function() {
   console.log("Launching game…");
-  jQuery.get('//dvpm0d7fqsyhz.cloudfront.net/game_data.xml', function (xml_data) {
+  jQuery.get('//morgenbladet-si.s3-eu-west-1.amazonaws.com/julespill/game_data.xml', function (xml_data) {
     console.log("Data loaded.");
     var g = new Julespill(jQuery(xml_data), jQuery("#game_area"));
     g.start();
