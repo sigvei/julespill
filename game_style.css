@@ -1,0 +1,30 @@
+@import url('//morgenbladet-si.s3-eu-west-1.amazonaws.com/julespill/flaticon.css');
+
+  #game_area {
+    font-family: "Founders Grotesk";
+    max-width: 25em;
+    text-align: center;
+    margin: auto auto;
+  }
+
+  #game_area button  {
+    display: block;
+    width: 100%;
+    background-color: white;
+    border: 2px solid #e63332;
+    padding: 5px;
+    margin-bottom: 6px;
+    font-family: "Founders Grotesk";
+    font-size: 100%;
+  }
+  #game_area button:hover {
+    background-color: #e6c2c2;
+  }
+  #game_area span.icon::before {
+    font-size: 75px;
+    color: #e63332;
+    margin-left: 0;
+  }
+  #game_area .source {
+    color: #aaa;
+  }
