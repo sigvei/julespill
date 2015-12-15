@@ -2,9 +2,8 @@
 
   #game_area {
     font-family: "Founders Grotesk";
-    max-width: 25em;
+    max-width: 23em;
     text-align: center;
-    margin: auto auto;
   }
 
   #game_area button  {
